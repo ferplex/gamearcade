@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Arcade Web - Street Fighter II</title>
+    <style>
+        /* Pantalla completa sin bordes para que encaje perfecto en el iframe de Blogger */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            width: 100%; 
+            height: 100%; 
+            background-color: #000; 
+            overflow: hidden; 
+        }
+        #game-container { 
+            width: 100%; 
+            height: 100%; 
+        }
+    </style>
+</head>
+<body>
+
+    <div id="game-container"></div>
+
+    <script type="text/javascript">
+        EJS_player = '#game-container';
+        
+        // Núcleo de Super Nintendo (SFC)
+        EJS_core = 'snes'; 
+        
+        EJS_gameName = 'Street Fighter II';
+        EJS_color = '#d32f2f'; // Color de la barra de carga
+        EJS_startOnLoaded = true; // Inicia automáticamente al cargar
+        
+        // Servidor externo seguro que procesa el emulador en la nube
+        EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/'; 
+        
+        // NOMBRE EXACTO DE TU ARCHIVO EN GITHUB (revisado con tu ruta)
+        EJS_gameUrl = 'strfigther.zip'; 
+    </script>
+    
+    <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+
+</body>
+</html>
